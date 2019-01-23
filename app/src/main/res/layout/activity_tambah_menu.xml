@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahMenu">
+
+    <Button
+        android:id="@+id/btnGambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="98dp"
+        android:background="@drawable/klik"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_insert_photo"
+        android:focusable="true"
+        android:text="@string/masukkanGambar"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="112dp"
+        android:layout_toEndOf="@+id/textView"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNama"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="159dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="134dp"
+        android:text="@string/namaroti" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/harga"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="260dp"
+        android:text="@string/jenis" />
+
+    <RadioGroup
+        android:id="@+id/rgJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="112dp"
+        android:layout_alignStart="@+id/txtNama"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-4dp"
+        android:checkedButton="@+id/rdClassic">
+
+        <RadioButton
+            android:id="@+id/rdClassic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/classic" />
+
+        <RadioButton
+            android:id="@+id/rdModern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/modern" />
+
+        <RadioButton
+            android:id="@+id/rdPremium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/premium" />
+
+        <RadioButton
+            android:id="@+id/rdAsin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/asin" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button"
+        android:text="@string/simpan"
+        android:textColor="@color/White" />
+
+    <RadioGroup
+        android:id="@+id/rgKuba"
+        android:layout_width="227dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="202dp"
+        android:checkedButton="@+id/rdBakar"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdBakar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgKuba"
+            android:layout_alignStart="@+id/rgKuba"
+            android:layout_alignTop="@+id/rgKuba"
+            android:layout_weight="1"
+            android:text="@string/bakar" />
+
+        <RadioButton
+            android:id="@+id/rdKukus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/kukus" />
+    </RadioGroup>
+
+</RelativeLayout>

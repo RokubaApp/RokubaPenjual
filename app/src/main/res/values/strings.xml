@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PesananRokubaTerbaru</string>
+    <string name="tambah_roti">Tambah Roti</string>
+    <string name="delivery">Delivery</string>
+    <string name="umum">Umum</string>
+    <string name="rokuba">Rokuba</string>
+    <string name="masukkanGambar">Masukkan Gambar</string>
+    <string name="harga">Harga : Rp. </string>
+    <string name="namaroti">Nama Roti :</string>
+    <string name="jenis">Jenis Rasa Roti :</string>
+    <string name="classic">CLASSIC</string>
+    <string name="modern">MODERN</string>
+    <string name="premium">PREMIUM</string>
+    <string name="asin">ASIN</string>
+    <string name="simpan">SIMPAN</string>
+    <string name="list">Daftar Roti</string>
+    <string name="bakar">Bakar</string>
+    <string name="kukus">Kukus</string>
+    <string name="rp">Rp. </string>
+</resources>
